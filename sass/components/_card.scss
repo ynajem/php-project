@@ -1,0 +1,68 @@
+.card{
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	box-shadow:0 0 3px rgba(0,0,0,0.07),0 0 0 rgba(0,0,0,0);
+	margin-bottom: 15px;
+}
+.card-header{
+	background-color: #fafafa;
+	padding: .5rem 1rem;
+}
+
+$color: red;
+$color: #f3f3f3;
+.btn {
+	font: bold 12px Helvetica, Arial, sans-serif;
+	padding: 7px 12px;
+	transition: border-color .218s;
+	border-radius: 2px;
+	// margin-top: 10px;
+	// margin-right: 5px;
+}
+.btn-default{
+	color: darken($color,60%);
+	background-color: $color;
+	text-shadow: 0 1px 0 lighten($color,20%);
+	border: solid 1px darken($color,9%);
+}
+.btn:hover{
+	box-shadow: 0 1px 2px rgba(darken($color,60%), 0.15);
+}
+.btn-default:hover {
+		color: darken($color,70%);
+    border-color: #999;
+    border-color: darken($color,30%);
+}
+.btn:active {
+    color: #000;
+    border-color: #444;
+}
+
+.hr{
+	clear: both;
+	display: block;
+	height: 8px;
+	background: url(../img/hr.png) repeat-x;
+	margin: 15px 0;
+}
+
+
+.form-control{
+	border-radius: 0px;
+	line-height: 1.3;
+	font-size: .9rem;
+	&:focus{
+		outline: #f2f2f2 auto 3px;
+		box-shadow: none;
+		border-color: #ddd;
+	}
+}
+
+.form-check-input {
+	margin-top: .1rem;
+	outline: 0;
+}
+
+option:focus{
+	outline: none;
+}

@@ -1,0 +1,36 @@
+//
+// Theme Variables
+//-----------------------------------------------------
+
+// Primary font
+$body-font: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size: 0.875rem;
+
+//
+// Theme Colors
+//
+
+$white: #FFF;
+
+// Primary color is the main color of the Nano theme which is used
+// for navbar, active links and primary buttons and so many other things.
+
+$primary-color: #f37c1a;
+$primary-color: #26519e;
+$primary-color: #563d7c;
+$dark-primary-color: darken($primary-color,10%);
+$light-primary-color: lighten($primary-color,10%);
+
+// Complementry color is used to indecate the loading bar on the top
+// of the page with pace.js plugin
+$complementry-color: adjust_hue($primary-color, 180);
+
+// ------- Sidebar Width --------
+$sidebar-width: 230px;
+
+// ------- Sidebar Colors --------
+
+// Background color of sidebar
+$sidebar-color: #fefefe;
+$sidebar-color: #111;
+$sidebar-link-color: #fff;
