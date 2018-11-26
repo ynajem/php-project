@@ -1,7 +1,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Put The Page Description Here">
+<meta name="description" content="<?php echo $page_description ?>">
 <meta name="author" content="Najem Uness">
 <link rel="icon" href="favicon.ico">
 
@@ -12,4 +12,4 @@
 <link rel="stylesheet" href="css/fontawesome.min.css"><!-- Fontawesome CSS -->
 <link rel="stylesheet" href="css/bootstrap.css"><!-- Bootstrap CSS -->
 <!-- Page styles -->
-<link href="css/main.css" rel="stylesheet">
+<!-- <link href="css/main.css" rel="stylesheet"> -->

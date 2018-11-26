@@ -1,5 +1,6 @@
 <?php
   $page_title = "Najem Starter Template";
+  $page_description = "Put the page description here";
 ?>
 <!doctype html>
 <html lang="en">
@@ -8,7 +9,6 @@
   </head>
   <body>
     <?php include("inc/inc.header.php") ?>
-    <?php //include("inc/inc.sidebar.php") ?>
     <main>
       <div class="text-center pt-4">
         <h1>Najem starter template</h1>
