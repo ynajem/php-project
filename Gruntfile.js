@@ -42,16 +42,28 @@ module.exports = function(grunt) {
         implementation: sassImp,
       },
       main: {
-        files: {'css/layout.css':'sass/layout.scss','css/main.css':'sass/main.scss'}
+        files: {
+          'css/layout.css':'sass/layout.scss',
+          'css/main.css':'sass/main/main.scss'
+        }
+      },
+      dashboard: {
+        files: {
+          'css/dashboard.css':'sass/dashboard/main.scss'
+        }
       },
       bootstrap : {
         files: {'css/bootstrap.css':'node_modules/bootstrap/scss/bootstrap.scss'}
       }
     },
     watch: {
-      css: {
-        files: ['sass/*.scss'],
+      main: {
+        files: ['sass/main/*.scss','sass/main/*/*.scss'],
         tasks: ['sass:main'],
+      },
+      dashboard: {
+        files: ['sass/dashboard/*.scss','sass/dashboard/*/*.scss'],
+        tasks: ['sass:dashboard'],
       },
       bootstrap: {
         files: ['node_modules/bootstrap/scss/*.scss'],

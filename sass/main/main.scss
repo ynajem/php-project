@@ -1,5 +1,5 @@
 /*!
- * The Nano User Interface
+ * The PHP Project Main Style
  * Author: Najem Uness
  * ================================*/
 
@@ -8,20 +8,19 @@
 
 // This files are essential for the theme
 @import 'init/vars';
-@import 'init/style';
+// @import 'init/style';
 @import 'init/pace';
-@import 'init/fonts';
+// @import 'init/fonts';
 
 // 2 - Layout
 //---------------------------------------------------
 
 // This layout of the pages
-@import 'layout/layout';
-@import 'layout/header';
-@import 'layout/sidebar';
-// @import 'layout/sidebar-mini';
+// @import 'layout/layout';
+// @import 'layout/header';
+// @import 'layout/sidebar';
 
 
 // 3 - Components
 //---------------------------------------------------
-@import 'components/card';
+// @import 'components/card';

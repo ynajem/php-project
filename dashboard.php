@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <?php include("inc/inc.head.php") ?>
-  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="stylesheet" href="css/dashboard.css"> 
 </head>
 
 <body class="app">
