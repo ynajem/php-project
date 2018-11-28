@@ -8,8 +8,10 @@
 <title><?php echo $page_title; ?></title>
 
 <script src="js/pace.min.js"></script>
-<!-- <link href="css/pace.css" rel="stylesheet" /> -->
 <link rel="stylesheet" href="css/fontawesome.min.css"><!-- Fontawesome CSS -->
 <link rel="stylesheet" href="css/bootstrap.css"><!-- Bootstrap CSS -->
 <!-- Page styles -->
-<!-- <link href="css/main.css" rel="stylesheet"> -->
+<link href="css/main.css" rel="stylesheet">
+<?php if($view=='dashboard'): ?>
+<link href="css/dashboard.css" rel="stylesheet">
+<?php endif; ?>
