@@ -2,4 +2,4 @@
 if(!isset($view)){
     $view = "main";
 }
-include "views/view.{$view}.php";
+include ROOT."/views/view.{$view}.php";

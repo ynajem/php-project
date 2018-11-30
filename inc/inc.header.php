@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="menu">
       <!-- menu -->
-      <?php include("inc/inc.menu.php") ?>
+      <?php include("inc.menu.php") ?>
       <!-- Search -->
       <form class="form-inline" method="get" action="">
         <input name="q" class="form-control" type="text" placeholder="Search">
