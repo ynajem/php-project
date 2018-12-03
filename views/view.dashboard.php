@@ -9,7 +9,7 @@
   <div id="main-content">
     <?php include "inc.sidebar.php" ?>
     <main id="content" class="p-2"> 
-      <div class="card">Cool Down</div>
+      <div class="card">Cool Down <?php echo "Hello" ?></div>
     </main>
   </div>
   <?php include "inc.scripts.php" ?>
