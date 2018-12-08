@@ -8,16 +8,13 @@ class Route
 	// List of closures to call
 	private $_listCall = array();
 
-	// Used class-wide items to clean strings
-	private $_trim = '/\^$';
-
   // Adds a URI and Function to the two lists
 	// $uri A path such as about/system
 	// $function An anonymous function
 	
 	public function add($uri, $function)
 	{
-		$uri = trim($uri, $this->_trim);
+		$uri = trim($uri, '/\^$');
 		$this->_listUri[] = $uri;
 		$this->_listCall[] = $function;
 	}
@@ -26,8 +23,7 @@ class Route
 	public function listen()
 	{
 		$uri = isset($_REQUEST['uri']) ? $_REQUEST['uri'] : '/';
-		$uri = trim($uri, $this->_trim);
-
+		$uri = trim($uri, '/\^$');
 		$replacementValues = array();
 
 		// List through the stored URI's
@@ -41,17 +37,13 @@ class Route
 				$fakeUri = explode('/', $listUri);
 
 				// Gather the .+ values with the real values in the URI
-				foreach ($fakeUri as $key => $value)
-				// {
-				{
-					if ($value == '.+')
-					{
-						$replacementValues[] = $realUri[$key];
-					}
+				foreach ($fakeUri as $key => $value) {
+					if ($value == '.+')	$replacementValues[] = $realUri[$key];
 				}
 
 				// Pass an array for arguments
 				call_user_func_array($this->_listCall[$listKey], $replacementValues);
+				exit;
 			}
 
 		} // End of Loop

@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <!-- Brand -->
     <a class="navbar-brand" href="/">
-      <img src="svg/brand.svg" width="35" height="35" alt="">
+      <img src="/svg/brand.svg" width="35" height="35" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
       <span class="navbar-toggler-icon"></span>

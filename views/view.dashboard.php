@@ -9,7 +9,7 @@
   <div id="main-content">
     <?php include "inc.sidebar.php" ?>
     <main id="content" class="p-2"> 
-      <div class="card">Cool Down <?php echo "Hello" ?></div>
+      <div class="card">Welcome to the NANO Dashboard</div>
     </main>
   </div>
   <?php include "inc.scripts.php" ?>

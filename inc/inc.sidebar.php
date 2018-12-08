@@ -1,6 +1,6 @@
 <aside id="sidebar">
   <div class="text-center">
-    <img class="avatar rounded-circle mb-2" src="img/user1.png" width="64" height="64">
+    <img class="avatar rounded-circle mb-2" src="/img/user1.png" width="64" height="64">
     <div class="profile">
       <p class="mb-0">Najem Uness</p>
       <p>Frontend Developer</p>

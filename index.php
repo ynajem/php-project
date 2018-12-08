@@ -1,26 +1,19 @@
 <?php
-
-include "init.php";
-include "Router.php";
+require "init.php";
 
 $route = new Route();
 
 $route->add('/', function() {
-  $page_title = "Najem Starter Template";
-  $page_description = "Put the page description here";
-  $view = "main";
-  include "layout.php";
+  include "render.php";
 });
 
-$route->add('/dash', function() {
-  $page_title = "Najem Dashboard";
-  $page_description = "Description Here";
+$route->add('dash|dashboard', function() {
   $view = "dashboard";
-  include "layout.php";
+  include "render.php";
 });
 
-$route->add('/name/.+/.+', function($name,$mail) {
-  echo "Name: $name<br>Email: $mail";
+$route->add('test/.+', function($name) {
+  echo "My Name is $name\n";
 });
 
 $route->listen();
