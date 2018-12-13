@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       css: {
         expand:true, cwd: 'node_modules', flatten: true, nonull:true,
         src: [
-          '@fortawesome/fontawesome-free/css/fontawesome.min.css',
+          'font-awesome/css/font-awesome.min.css',
           'bootstrap/dist/css/bootstrap.min.css',
           'bootstrap/dist/css/bootstrap.min.css.map',
         ],
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         }
       },
       bootstrap : {
-        files: {'css/bootstrap.css':'node_modules/bootstrap/scss/bootstrap.scss'}
+        files: {'css/bootstrap.css':'sass/bootstrap/main.scss'}
       }
     },
     watch: {
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
         tasks: ['sass:dashboard'],
       },
       bootstrap: {
-        files: ['node_modules/bootstrap/scss/*.scss'],
+        files: ['node_modules/bootstrap/scss/*.scss','sass/bootstrap/*.scss'],
         tasks: ['sass:bootstrap'],
       },
       scripts: {

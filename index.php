@@ -12,6 +12,12 @@ $route->add('dash|dashboard', function() {
   include "render.php";
 });
 
+$route->add('add-code', function() {
+  $view = "addcode";
+  include "render.php";
+});
+
+
 $route->add('test/.+', function($name) {
   echo "My Name is $name\n";
 });

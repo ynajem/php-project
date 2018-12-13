@@ -2,6 +2,26 @@
  * The PHP Project Main Style
  * Author: Najem Uness
  * ================================*/
+body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #333; }
+
+button, a {
+  outline: none; }
+
+::selection {
+  color: #FFF;
+  background-color: #cf640b; }
+
+.hr-dashed {
+  border-top: 1px dashed #e7eaec;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  margin: 20px 0; }
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
