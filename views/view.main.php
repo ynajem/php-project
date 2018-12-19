@@ -4,7 +4,7 @@
     <?php include("inc.head.php") ?>
   </head>
   <body>
-    <?php include("inc.header.php") ?>
+    <?php include("inc.navbar.php") ?>
     <main>
       <div class="text-center pt-4">
         <h1>Najem starter template</h1>

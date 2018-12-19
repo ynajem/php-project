@@ -4,10 +4,18 @@
     <?php include("inc.head.php") ?>
   </head>
   <body>
-    <?php include("inc.header.php") ?>
-    <main class="py-4">
-      <?php include "partials/content.addcode.php" ?>
-    </main><!-- container -->
+    <div id="main">
+      <?php include("inc.navbar.php") ?>
+      <div id="main-content">
+        <div class="container-fluid mt-4">
+          <div class="row">
+            <?php include "inc/inc.sidebar.php" ?>
+            <?php include "partials/content.addcode.php" ?>
+            <?php include "inc/inc.leftbar.php" ?>
+          </div>
+        </div> <!-- container -->
+      </div><!-- #main-content -->
+    </div><!-- #main -->
     <?php include("inc.footer.php") ?>
     <?php include("inc.scripts.php") ?>
   </body>

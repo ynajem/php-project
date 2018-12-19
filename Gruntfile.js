@@ -23,6 +23,15 @@ module.exports = function(grunt) {
           'bootstrap/dist/css/bootstrap.min.css.map',
         ],
         dest: 'css/'
+      },
+      fonts: {
+        expand:true, cwd: 'node_modules', flatten: true, nonull:true,
+        src: [
+          'font-awesome/css/font-awesome.min.css',
+          'bootstrap/dist/css/bootstrap.min.css',
+          'bootstrap/dist/css/bootstrap.min.css.map',
+        ],
+        dest: 'css/'
       }
     },
 

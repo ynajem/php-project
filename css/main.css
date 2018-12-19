@@ -2,12 +2,6 @@
  * The PHP Project Main Style
  * Author: Najem Uness
  * ================================*/
-body {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  color: #333; }
-
 button, a {
   outline: none; }
 
