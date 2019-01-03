@@ -1,0 +1,26 @@
+
+.btn-white {
+	border-color: $light-border;
+	background: transparent;
+	color: #4E5155;
+	box-shadow: none;
+	&:hover {
+		background: rgba(24,28,33,0.06);
+	}
+	&:focus {
+		box-shadow: 0 0 0 2px rgba(2,3,3,0.05);
+	}
+}
+
+$color: #f3f3f3;
+.btn-default{
+	color: darken($color,60%);
+	background-color: $color;
+	text-shadow: 0 1px 0 lighten($color,20%);
+	border: solid 1px darken($color,9%);
+	&:hover {
+		color: darken($color,70%);
+		border-color: #999;
+		border-color: darken($color,30%);
+	}
+}

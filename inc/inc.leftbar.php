@@ -1,8 +1,8 @@
-<div class="leftbar col-md-3 col-sm-4 hidden-sm">
+<div class="leftbar col-md-2 col-sm-4 hidden-sm">
   <ul class="list-group mb-4">
-    <li class="list-group-item d-flex justify-content-between align-items-center">Python<span class="badge badge-primary badge-pill">14</span> </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">Linux<span class="badge badge-primary badge-pill">2</span> </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">Node JS<span class="badge badge-primary badge-pill">1</span> </li>
+    <li><a href="#">Python</a><span class="badge badge-danger badge-pill">14</span> </li>
+    <li><a href="#">Linux</a><span class="badge badge-primary badge-pill">2</span> </li>
+    <li><a href="#">Node JS</a><span class="badge badge-primary badge-pill">1</span> </li>
   </ul>
   <div class="card">
     <div class="card-body">

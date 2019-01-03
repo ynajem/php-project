@@ -1,8 +1,9 @@
-<div class="sidebar col-md-2">
-  <ul class="list-group" >
-    <li class=" border-0 list-group-item d-flex justify-content-between align-items-center"> MY LISTS <i class="fa fa-list text-muted fa-lg"></i></li>
-    <li class=" border-0 list-group-item d-flex justify-content-between align-items-center"> ANALYTICS <i class="fa fa-pie-chart text-muted fa-lg"></i></li>
-    <li class=" border-0 list-group-item d-flex justify-content-between align-items-center"> SETTINGS <i class="fa fa-cog text-muted fa-lg"></i></li>
-    <li class=" border-0 list-group-item d-flex justify-content-between align-items-center"> LOG OUT <i class="fa fa-sign-out text-muted fa-lg"></i></li>
+<div class="sidebar col-md-3">
+  <ul class="list-group">
+    <li>Cras justo odio</li>
+    <li>Dapibus ac facilisis in</li>
+    <li>Morbi leo risus</li>
+    <li>Porta ac consectetur ac</li>
+    <li>Vestibulum at eros</li>
   </ul>
 </div>

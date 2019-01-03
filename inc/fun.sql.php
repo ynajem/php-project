@@ -85,8 +85,8 @@ function addslashes_r($arr){
   },$arr);
 }
 
-// get('hdmp.ext','mkv','title');
-function get($field,$value,$focus=false){
+// select('hdmp.ext','mkv','title');
+function select($field,$value,$focus=false){
   $value = addslashes($value);
   list($table,$field)=explode('.', $field);
 	if($focus){

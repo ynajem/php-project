@@ -1,14 +1,20 @@
-// body{
-// 	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-// 	font-size: 13px;
-// 	font-weight: normal;
-// 	color: #333;
-// }
+body{
+	// font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	// font-size: 13px;
+	// font-weight: normal;
+	color: #333;
+	background-color: #f1f1f1;
+}
 // get rid of the outline in all links
 button,a{
-	outline: none;
+	outline: none; // get rid of the outline in all links
 }
 
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
 ::selection {
 	color: $white;
 	background-color: darken($primary-color,10%);
@@ -20,4 +26,11 @@ button,a{
 	background-color: #fff;
 	height: 1px;
 	margin: 20px 0;
+}
+.hr-fancy{
+	display: block;
+	height: 8px;
+	background: url(../img/hr.png) repeat-x;
+	margin: 15px 0;
+	border:0;
 }

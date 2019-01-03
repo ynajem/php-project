@@ -1,0 +1,202 @@
+{
+  "LIVETV": [
+    {
+      "id": "709",
+      "cat_id": "33",
+      "channel_title": "AD SPORTS 1",
+      "channel_url": "http://adtv.ercdn.net/adsport1/adsport1_480p.m3u8",
+      "channel_thumbnail": "75736_AD1.png",
+      "channel_desc": "<p>AD SPORTS 1</p>\r\n",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "1665",
+      "cat_id": "33",
+      "channel_title": "AD SPORTS 2",
+      "channel_url": "http://adtv.ercdn.net/adsport2/adsport2_720p.m3u8",
+      "channel_thumbnail": "47921_AD2.png",
+      "channel_desc": "AD SPORTS 2",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "707",
+      "cat_id": "33",
+      "channel_title": "ALKASS 1",
+      "channel_url": "http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass1",
+      "channel_thumbnail": "64963_al_kass_sport_channel_arabic_landscape_logo.ai_.png.jpg",
+      "channel_desc": "ALKASS 1",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "706",
+      "cat_id": "33",
+      "channel_title": "ALKASS 2",
+      "channel_url": "http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass2",
+      "channel_thumbnail": "97087_al_kass_sport_channel_arabic_landscape_logo.ai_.png.jpg",
+      "channel_desc": "ALKASS 2",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "705",
+      "cat_id": "33",
+      "channel_title": "ALKASS 3",
+      "channel_url": "http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass3",
+      "channel_thumbnail": "88188_al_kass_sport_channel_arabic_landscape_logo.ai_.png.jpg",
+      "channel_desc": "ALKASS 3",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "704",
+      "cat_id": "33",
+      "channel_title": "ALKASS 4",
+      "channel_url": "http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass4",
+      "channel_thumbnail": "13405_al_kass_sport_channel_arabic_landscape_logo.ai_.png.jpg",
+      "channel_desc": "ALKASS 4",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "703",
+      "cat_id": "33",
+      "channel_title": "ALKASS 5",
+      "channel_url": "http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass5",
+      "channel_thumbnail": "87350_al_kass_sport_channel_arabic_landscape_logo.ai_.png.jpg",
+      "channel_desc": "ALKASS 5",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "714",
+      "cat_id": "33",
+      "channel_title": "ARENA SPORT 1",
+      "channel_url": "http://46.40.5.99:8000/arena_1_high",
+      "channel_thumbnail": "576_ARS1.png",
+      "channel_desc": "ARENA SPORT 1",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "713",
+      "cat_id": "33",
+      "channel_title": "ARENA SPORT 2",
+      "channel_url": "http://46.40.5.99:8000/arena_2_high",
+      "channel_thumbnail": "15867_ARS2.png",
+      "channel_desc": "ARENA SPORT 2",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "712",
+      "cat_id": "33",
+      "channel_title": "ARENA SPORT 3",
+      "channel_url": "http://46.40.5.99:8000/arena_3_high",
+      "channel_thumbnail": "61449_AR3.png",
+      "channel_desc": "ARENA SPORT 3",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "711",
+      "cat_id": "33",
+      "channel_title": "ARENA SPORT 4",
+      "channel_url": "http://46.40.5.99:8000/arena_4_high",
+      "channel_thumbnail": "11243_AR4.png",
+      "channel_desc": "ARENA SPORT 4",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "689",
+      "cat_id": "33",
+      "channel_title": "BURASPOR TV",
+      "channel_url": "http://stream.yayindayiz.biz/Bursaspor/bursaspor/playlist.m3u",
+      "channel_thumbnail": "11142_BSTV.jpg",
+      "channel_desc": "BURASPOR TV",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "179",
+      "cat_id": "33",
+      "channel_title": "EUROSPORT 1 CZ",
+      "channel_url": "http://65.254.55.10:4000/live/197/197.m3u8",
+      "channel_thumbnail": "47729_EURO1.png",
+      "channel_desc": "<p>EUROSPORT 1 CZ</p>\r\n",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "65",
+      "cat_id": "33",
+      "channel_title": "J Sports 1",
+      "channel_url": "http://203.162.235.41:17809",
+      "channel_thumbnail": "49018_jsports_1.jpg",
+      "channel_desc": "<p>J Sports 1</p>\r\n",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "731",
+      "cat_id": "33",
+      "channel_title": "MLB NETWORK",
+      "channel_url": "http://mlblive-akc.mlb.com/ls01/mlbam/mlb_network/NETWORK_LINEAR_1/master_mobile.m3u8",
+      "channel_thumbnail": "71743_MLBNETWORK.png",
+      "channel_desc": "MLB NETWORK",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "690",
+      "cat_id": "33",
+      "channel_title": "REAL MADRID TV",
+      "channel_url": "http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8",
+      "channel_thumbnail": "67955_REAMMADRID.png",
+      "channel_desc": "REAL MADRID TV",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "1623",
+      "cat_id": "33",
+      "channel_title": "SPORTS TONIGHT",
+      "channel_url": "rtmp://freeview.fms.visionip.tv/live/sports_tonight_live-sports_tonight_live-promo-hsslive-25f-16x9-SDh?ref=www.sportstonightlive.com&USER=STL_0001",
+      "channel_thumbnail": "13065_SPORTS.png",
+      "channel_desc": "SPORTS TONIGHT",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    },
+    {
+      "id": "691",
+      "cat_id": "33",
+      "channel_title": "SPORTS TV",
+      "channel_url": "rtmp://stream.sportstv.com.tr/sportstv/SportsTV3",
+      "channel_thumbnail": "88532_sportstv.png",
+      "channel_desc": "SPORTS TV",
+      "cid": "33",
+      "category_name": "...OTHER...",
+      "category_image": "9441_SPORTS.png"
+    }
+  ]
+}

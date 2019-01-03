@@ -3,7 +3,7 @@ $navbar-padding-x:.25rem;
 $navbar-padding-y:.25rem;
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
-// @import "custom";
+@import "custom";
 
 .custom-select {
   -webkit-appearance: none;

@@ -12,6 +12,11 @@ $route->add('dash|dashboard', function() {
   include "render.php";
 });
 
+$route->add('api', function() {
+  // $view = "dashboard";
+  include "api.php";
+});
+
 $route->add('add-code', function() {
   $view = "addcode";
   include "render.php";

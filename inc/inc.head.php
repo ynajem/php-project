@@ -12,6 +12,6 @@
 <link rel="stylesheet" href="/css/bootstrap.css"><!-- Bootstrap CSS -->
 <!-- Page styles -->
 <link href="/css/main.css" rel="stylesheet">
-<?php if($view=='dashboard'): ?>
+<?php if($view == 'dashboard'): ?>
 <link href="/css/dashboard.css" rel="stylesheet">
 <?php endif; ?>
