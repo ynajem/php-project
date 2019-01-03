@@ -10,6 +10,7 @@
 <script src="/js/pace.min.js"></script>
 <link rel="stylesheet" href="/css/font-awesome.min.css"><!-- Fontawesome CSS -->
 <link rel="stylesheet" href="/css/bootstrap.css"><!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/css/plugins/tagsinput.css"><!-- Bootstrap Tagsinput -->
 <!-- Page styles -->
 <link href="/css/main.css" rel="stylesheet">
 <?php if($view == 'dashboard'): ?>

@@ -32,7 +32,7 @@
           <label>Description:</label>
           <textarea class="form-control" id="form30" rows="3"></textarea>
         </div>
-        <div class="form-group"><input type="text" class="form-control" id="form29" placeholder="Tags"></div>
+        <div class="form-group"><input type="text" class="form-control" id="tagsinput1"></div>
         <a href="#" class="btn btn-primary"> <span class="fa fa-plus mr-2"></span>Add Code</a>
         <a href="#" class="btn btn-default mx-2"> <span class="fa fa-plus mr-2"></span>Default</a>
         <a href="#" class="btn btn-white"> <span class="fa fa-plus mr-2"></span>Add Code</a>

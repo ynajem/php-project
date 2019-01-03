@@ -1,6 +1,7 @@
 $(function(){
   "use strict";
-  console.log("jQuery is Working!");
+	console.log("jQuery is Working!");
+	$("#tagsinput1").tagsinput({ tagClass: "badge badge-primary" });
 
 	// var treeviewMenu = $('.app-menu');
 
