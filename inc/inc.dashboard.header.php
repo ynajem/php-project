@@ -12,11 +12,11 @@
       <a class="header-icon" href="#" data-toggle="dropdown"><i class="fa fa-bell fa-lg"></i></a>
     </li><!-- User Menu-->
     <li class="dropdown">
-      <a class="header-icon" href="#" data-toggle="dropdown"><i class="fas fa-user fa-lg"></i></a>
+      <a class="header-icon" href="#" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i></a>
       <div class="dropdown-menu dropdown-menu-right">
-        <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Settings</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Settings</a>
         <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
       </div>
     </li>
   </ul>

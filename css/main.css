@@ -49,13 +49,25 @@ a:hover {
   width: 100%;
   height: 2px; }
 
+.login-msg {
+  height: 41px;
+  padding-left: 50px;
+  background: url(../img/sprites.png) 0px -1230px no-repeat; }
+  .login-msg p {
+    color: #9498a1;
+    font-size: 10px;
+    line-height: 14px; }
+
 .btn-white {
   border-color: rgba(24, 28, 33, 0.1);
+  border-color: #dadce0;
   background: transparent;
-  color: #4E5155;
+  color: #5f6368;
   box-shadow: none; }
   .btn-white:hover {
-    background: rgba(24, 28, 33, 0.06); }
+    background: rgba(24, 28, 33, 0.06);
+    background-color: rgba(32, 33, 36, 0.059);
+    color: #5f6368; }
   .btn-white:focus {
     box-shadow: 0 0 0 2px rgba(2, 3, 3, 0.05); }
 

@@ -13,3 +13,17 @@ function bs_select(Array $array)
   }
   return '<select class="custom-select">'.join($r,'').'</select>';
 }
+
+class template {
+  public $pageTitle;
+  public $description;
+  public $content;
+  public $view;
+  public $model;
+}
+
+function content($file,$tmpl="raw") {
+  ob_start();
+  require('contents/content.'.$file.'.php');
+  return ob_get_clean();
+}

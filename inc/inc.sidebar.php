@@ -1,4 +1,4 @@
-<div class="sidebar col-md-3">
+<div class="sidebar col-md-2">
   <ul class="list-group">
     <li>Cras justo odio</li>
     <li>Dapibus ac facilisis in</li>

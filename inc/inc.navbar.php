@@ -8,7 +8,7 @@
       <?php include("inc.menu.php") ?>
       <form method="get" action="/api">
         <input name="record" class="form-control form-control-sm" type="text" placeholder="Search">
-      </form><!-- Form Search -->
+      </form><!-- search form -->
     </div><!-- menu -->
-  </div><!-- container-fluid -->
+  </div><!-- container -->
 </nav>

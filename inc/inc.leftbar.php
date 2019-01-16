@@ -1,4 +1,4 @@
-<div class="leftbar col-md-2 col-sm-4 hidden-sm">
+<div class="leftbar col-md-3 col-sm-4 hidden-sm">
   <ul class="list-group mb-4">
     <li><a href="#">Python</a><span class="badge badge-danger badge-pill">14</span> </li>
     <li><a href="#">Linux</a><span class="badge badge-primary badge-pill">2</span> </li>

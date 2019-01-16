@@ -5,5 +5,5 @@ if(!isset($view)){
 if(!isset($model)){
 	$model = "main";
 }
-include ROOT."/models/model.{$model}.php";
+include ROOT."/inc/model.php";
 include ROOT."/views/view.{$view}.php";

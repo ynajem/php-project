@@ -1,11 +1,14 @@
 
 .btn-white {
 	border-color: $light-border;
+	border-color: #dadce0;
 	background: transparent;
-	color: #4E5155;
+	color: #5f6368;
 	box-shadow: none;
 	&:hover {
 		background: rgba(24,28,33,0.06);
+		background-color: rgba(32,33,36,0.059);
+		color: rgb(95, 99, 104);
 	}
 	&:focus {
 		box-shadow: 0 0 0 2px rgba(2,3,3,0.05);

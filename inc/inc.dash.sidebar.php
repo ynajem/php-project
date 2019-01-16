@@ -9,7 +9,7 @@
   <ul class="nav">
     <li class="nav-item">
       <a class="nav-link" href="#">
-        <i class="nav-icon fas fa-tachometer-alt"></i>
+        <i class="nav-icon fa fa-tachometer"></i>
         <span class="nav-label">Dashboard</span>
       </a>
     </li>
@@ -20,16 +20,16 @@
         <i class="treeview-indicator fa fa-angle-right"></i>
       </a>
       <div class="treeview-menu">
-        <a href="#" class="treeview-item"><i class="fa fa-circle"></i> Dashboard 1</a>
-        <a href="#" class="treeview-item"><i class="fa fa-circle"></i> Blank Page</a>
-        <a href="#" class="treeview-item active"><i class="fa fa-circle"></i> Bootstrap Elements</a>
+        <a href="#" class="treeview-item"><i class="fa fa-circle-o"></i> Dashboard 1</a>
+        <a href="#" class="treeview-item"><i class="fa fa-circle-o"></i> Blank Page</a>
+        <a href="#" class="treeview-item active"><i class="fa fa-circle-o"></i> Bootstrap Elements</a>
       </div>
     </li>
     <li class="treeview nav-item"><a class="nav-link" href="#" data-toggle="treeview"><i class="nav-icon fa fa-puzzle-piece"></i><span class="nav-label">Components</span><i class="treeview-indicator fa fa-angle-right"></i></a>
       <ul class="treeview-menu">
-        <li><a class="treeview-item" href="#"><i class="fa fa-circle"></i> Cards</a></li>
+        <li><a class="treeview-item" href="#"><i class="fa fa-circle-o"></i> Cards</a></li>
       </ul>
     </li>
-    <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon fas fa-chart-pie"></i><span class="nav-label">Charts</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon fa fa-pie-chart"></i><span class="nav-label">Charts</span></a></li>
   </ul>
 </aside>

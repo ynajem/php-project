@@ -3,15 +3,14 @@
 <head>
   <?php include("inc.head.php") ?>
 </head>
-
 <body class="app">
   <?php include "inc.dashboard.header.php" ?>
   <div id="main-content">
     <?php include "inc.dash.sidebar.php" ?>
-    <main id="content" class="p-2"> 
-      <div class="card">Welcome to the NANO Dashboard</div>
+    <main id="content" class="py-2"> 
+        <?= $tmpl->content ?>
     </main>
-  </div>
+  </div><!-- main-content -->
   <?php include "inc.scripts.php" ?>
 </body>
 </html>
