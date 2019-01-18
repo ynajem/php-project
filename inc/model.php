@@ -3,6 +3,8 @@
 $tmpl = new template();
 $tmpl->topics = ['linux'=>'Linux','python'=>'Python','php'=>'PHP'];
 $tmpl->sub_topics = ['network'=>'Network','os'=>'Operating Systems','scripts'=>'Scripts','tweaks'=>'Tweaks'];
+$tmpl->model = $model;
+$tmpl->view = $view;
 
 switch ($model) {
   
@@ -23,7 +25,6 @@ switch ($model) {
   case 'dashboard':
     $tmpl->page_title = "Dashboard";
     $tmpl->description = "Dashboard Description Here";
-    $tmpl->view = 'dashboard';
     $tmpl->content = '<div class="container-fluid"><div class="row">'.content('addcode',$tmpl).'</div></div>';
     break;
     

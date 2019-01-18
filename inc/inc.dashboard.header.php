@@ -16,7 +16,7 @@
       <div class="dropdown-menu dropdown-menu-right">
         <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Settings</a>
         <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
+        <a class="dropdown-item" href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
       </div>
     </li>
   </ul>

@@ -3,5 +3,6 @@
   <a class="nav-link <?php if($model=="addcode") echo "active" ?>" href="/add-code">Add Code</a>
   <a class="nav-link <?php if($model=="dashboard") echo "active" ?>" href="/dash">Dashboard</a>
   <a class="nav-link <?php if($model=="login") echo "active" ?>" href="/login">Login</a>
+  <a class="nav-link <?php if($model=="logout") echo "active" ?>" href="/logout">Logout</a>
   <a class="nav-link <?php if($model=="dump") echo "active" ?>" href="#">Dump Link</a>
 </div>

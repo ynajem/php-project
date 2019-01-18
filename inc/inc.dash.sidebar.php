@@ -21,8 +21,8 @@
       </a>
       <div class="treeview-menu">
         <a href="#" class="treeview-item"><i class="fa fa-circle-o"></i> Dashboard 1</a>
-        <a href="#" class="treeview-item"><i class="fa fa-circle-o"></i> Blank Page</a>
-        <a href="#" class="treeview-item active"><i class="fa fa-circle-o"></i> Bootstrap Elements</a>
+        <a href="/" class="treeview-item"><i class="fa fa-circle-o"></i> Blank Page</a>
+        <a href="/add-code" class="treeview-item active"><i class="fa fa-circle-o"></i> Add Code</a>
       </div>
     </li>
     <li class="treeview nav-item"><a class="nav-link" href="#" data-toggle="treeview"><i class="nav-icon fa fa-puzzle-piece"></i><span class="nav-label">Components</span><i class="treeview-indicator fa fa-angle-right"></i></a>

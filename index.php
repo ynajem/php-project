@@ -1,11 +1,12 @@
 <?php
 require "init.php";
-// require "login.php";
 
 $route = new Route();
+// login(); /* This Make All Pages Private */
 
 $route->add('/', function() {
   /* Model and View have the default values main,main */
+  login();
   include "render.php";
 });
 
@@ -26,6 +27,10 @@ $route->add('login', function() {
   include "render.php";
 });
 
+$route->add('logout', function() {
+  logout();
+});
+
 $route->add('api', function() {
   include "api.php";
 });
@@ -33,5 +38,4 @@ $route->add('api', function() {
 $route->add('test/.+', function($name) {
   echo "My Name is $name\n";
 });
-
 $route->listen();

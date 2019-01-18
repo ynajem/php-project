@@ -6,10 +6,10 @@
           <strong>Connexion</strong>
         </div>
         <div class="card-body">
-          <form action="" method="post" >
+          <form action="login.php" method="post" >
             <div class="form-group">
-              <label for="login">Utilisateur :</label>
-              <input type="text" class="form-control" name="login" autocomplete="off" >
+              <label for="username">Nom d'utilisateur :</label>
+              <input type="text" class="form-control" name="username" autocomplete="off" >
             </div>
             <div class="form-group">
               <label for="password">Mot de passe :</label>
