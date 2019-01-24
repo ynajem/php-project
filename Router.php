@@ -3,38 +3,35 @@
 class Route
 {
 	// List of URI's to match against
-  private $_listUri = array();
+  private $urls = array();
 
 	// List of closures to call
-	private $_listCall = array();
+	private $functions = array();
 
   // Adds a URI and Function to the two lists
-	// $uri A path such as about/system
-	// $function An anonymous function
-	
 	public function add($uri, $function)
 	{
 		$uri = trim($uri, '/\^$');
-		$this->_listUri[] = $uri;
-		$this->_listCall[] = $function;
+		$this->urls[] = $uri;
+		$this->functions[] = $function;
 	}
 
 	// Looks for a match for the URI and runs the related function
 	public function listen()
 	{
-		$uri = isset($_REQUEST['uri']) ? $_REQUEST['uri'] : '/';
+		$uri = $_REQUEST['uri'] ?? '';
 		$uri = trim($uri, '/\^$');
 		$replacementValues = array();
 
 		// List through the stored URI's
-		foreach ($this->_listUri as $listKey => $listUri)
+		foreach ($this->urls as $step => $url)
 		{
 			// See if there is a match
-			if (preg_match("#^$listUri$#", $uri))
+			if (preg_match("#^$url$#", $uri))
 			{
 				// Replace the values
 				$realUri = explode('/', $uri);
-				$fakeUri = explode('/', $listUri);
+				$fakeUri = explode('/', $url);
 
 				// Gather the .+ values with the real values in the URI
 				foreach ($fakeUri as $key => $value) {
@@ -42,7 +39,7 @@ class Route
 				}
 
 				// Pass an array for arguments
-				call_user_func_array($this->_listCall[$listKey], $replacementValues);
+				call_user_func_array($this->functions[$step], $replacementValues);
 				exit;
 			}
 

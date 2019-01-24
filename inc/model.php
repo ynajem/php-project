@@ -1,11 +1,4 @@
 <?php
-
-$tmpl = new template();
-$tmpl->topics = ['linux'=>'Linux','python'=>'Python','php'=>'PHP'];
-$tmpl->sub_topics = ['network'=>'Network','os'=>'Operating Systems','scripts'=>'Scripts','tweaks'=>'Tweaks'];
-$tmpl->model = $model;
-$tmpl->view = $view;
-
 switch ($model) {
   
   case 'main':
