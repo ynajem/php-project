@@ -52,19 +52,25 @@ class DB{
   public function row(){
     return $this->array()[0];
   }
+
+  public function json(){
+    $r = json_encode($this->array());
+    header('Content-Type: application/json');
+    return $r;
+  }
 }
 
 $db = new DB('localhost','bobo','root','arena');
 
 
-$db->sql = "SELECT username FROM users";
-$users = $db->list();
-foreach ($users as $user) {
-  # code...
-  $db->sql = "SELECT * FROM users WHERE username = '{$user}'";
-  $maleUsers = $db->row();
-  print_r($maleUsers);
-}
+// $db->sql = "SELECT username FROM users";
+// $users = $db->list();
+// foreach ($users as $user) {
+//   # code...
+//   $db->sql = "SELECT * FROM users WHERE username = '{$user}'";
+//   $maleUsers = $db->row();
+//   print_r($maleUsers);
+// }
 
-print_r($users);
-echo $db->count();
+// print_r($users);
+// echo $db->count();

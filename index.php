@@ -21,6 +21,11 @@ $route->add('add-code', function() {
   include "render.php";
 });
 
+$route->add('run-sql', function() {
+  $model = "runsql";
+  include "render.php";
+});
+
 $route->add('login', function() {
   $view = "solid";
   $model = "login";
@@ -33,6 +38,16 @@ $route->add('logout', function() {
 
 $route->add('api', function() {
   include "api.php";
+});
+
+$route->add('post', function() {
+  include "class.post.php";
+  $data = new Post();
+  arr($data->post);
+});
+
+$route->add('run/.+', function($function) {
+  include "runner.php";
 });
 
 $route->add('test/.+', function($name) {

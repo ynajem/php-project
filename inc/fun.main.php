@@ -5,13 +5,24 @@ function get($field,$default=FALSE)
   return $default;
 }
 
-function bs_select(Array $array)
-{
-  $r = [];
+function arr(Array $array){
+  echo "<pre>";
+  print_r($array);
+  echo "</pre>";
+}
+
+function options(Array $array){
+  $r = array();
   foreach ($array as $key => $value) {
     $r[] = '<option value="'.$key.'">'.$value.'</option>';
   }
-  return '<select class="custom-select">'.join($r,'').'</select>';
+  return join($r,'');
+}
+
+function bs_select(Array $array,$name)
+{
+  $lname = strtolower($name);
+  return '<label for="'.$lname.'">'.$name.' :</label><select name="'.$lname.'" id="'.$lname.'" class="custom-select">'.options($array).'</select>';
 }
 
 function redirect($url){

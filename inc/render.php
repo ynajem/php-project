@@ -5,6 +5,7 @@ $model = $model ?? 'main';
 
 /* Default template values */
 $tmpl = new template();
+$tmpl->page_title = "PHP Project";
 $tmpl->topics = ['linux'=>'Linux','python'=>'Python','php'=>'PHP'];
 $tmpl->sub_topics = ['network'=>'Network','os'=>'Operating Systems','scripts'=>'Scripts','tweaks'=>'Tweaks'];
 $tmpl->model = $model;
