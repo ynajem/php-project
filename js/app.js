@@ -40,4 +40,14 @@ $(function(){
 	// 		form.classList.add('was-validated');
 	// 	}, false);
 	// });
+
+	var editor = CodeMirror.fromTextArea(document.getElementById('codemirror'), {
+		// your settings here
+		lineNumbers: true,
+		matchBrackets: true,
+		autocapitalize: true,
+		tabMode: "indent",
+		mode: "sql",
+	});
+	editor.setSize("100%","150");
 });

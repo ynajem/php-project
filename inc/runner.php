@@ -6,7 +6,6 @@ $data = new Post();
 switch ($function) {
   case 'sql':
     $db->sql = stripcslashes($data->post['code']);
-    // echo $db->sql; die();
     echo($db->json());
     break;
   

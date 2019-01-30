@@ -4,10 +4,10 @@
       <i class="d-block fa fa-stop-circle fa-2x mr-md-5 text-primary"></i>
 
       <div class="nav mx-md-auto d-flex justify-content-center">
-        <a class="nav-link active" href="#">Home</a></li>
-        <a class="nav-link" href="#">Features</a></li>
-        <a class="nav-link" href="#">Pricing</a></li>
-        <a class="nav-link" href="#">About</a></li>
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">About</a>
       </div><!-- nav -->
 
       <div class="d-flex align-items-center justify-content-md-between justify-content-center my-2">

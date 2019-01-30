@@ -26,11 +26,15 @@ body {
 }
 
 #content {
-	min-height: calc(100vh - 46px);
+	// min-height: calc(100vh - 46px);
 	background-color: #F2F2F2;
 	transition: margin-left 0.3s ease;
 	@media(min-width: 768px) { margin-left: $sidebar-width; }
 	@media(max-width: 768px) { min-width: 100%; }
 	// @media(max-width: 480px) { padding: 0px; }
 	@media print { margin: 0; padding: 0; background-color: #fff; }
+}
+
+#main {
+	min-height: calc(100vh - 82px);
 }

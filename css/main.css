@@ -58,6 +58,43 @@ a:hover {
     font-size: 10px;
     line-height: 14px; }
 
+@media (min-width: 768px) {
+  body.sidenav-toggled #content {
+    margin-left: 0px; }
+  body.sidenav-toggled #sidebar {
+    left: -230px; } }
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
+    body #sidebar {
+      left: -230px; }
+    body.sidenav-toggled #content {
+      margin-left: 0; }
+    body.sidenav-toggled #sidebar {
+      left: 0; } }
+
+#main-content {
+  position: relative; }
+
+#content {
+  background-color: #F2F2F2;
+  transition: margin-left 0.3s ease; }
+  @media (min-width: 768px) {
+    #content {
+      margin-left: 230px; } }
+  @media (max-width: 768px) {
+    #content {
+      min-width: 100%; } }
+  @media print {
+    #content {
+      margin: 0;
+      padding: 0;
+      background-color: #fff; } }
+
+#main {
+  min-height: calc(100vh - 82px); }
+
 .btn-white {
   border-color: rgba(24, 28, 33, 0.1);
   border-color: #dadce0;

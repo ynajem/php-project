@@ -16,3 +16,6 @@
 <?php if($view == 'dashboard'){?>
   <link href="/css/dashboard.css" rel="stylesheet"><!-- DashBoard Spicefic Style -->
 <?php } ?>
+<?php if($model == 'runsql'){?>
+  <link href="/css/plugins/codemirror.css" rel="stylesheet"><!-- CodeMirror Plugin -->
+<?php } ?>

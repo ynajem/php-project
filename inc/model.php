@@ -22,6 +22,7 @@ switch ($model) {
     break;
 
   case 'runsql':
+    $tmpl->model = "runsql";
     $tmpl->query_types = ['craete'=>'Create','read'=>'Read','update'=>'Update','delete'=>'Delete'];
     $tmpl->content = '<div class="container"><div class="row">'.content('runSQL',$tmpl).'</div></div>';
     break;

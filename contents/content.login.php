@@ -6,19 +6,7 @@
           <strong>Connexion</strong>
         </div>
         <div class="card-body">
-          <form action="login.php" method="post" >
-            <div class="form-group">
-              <label for="username">Nom d'utilisateur :</label>
-              <input type="text" class="form-control" name="username" autocomplete="off" >
-            </div>
-            <div class="form-group">
-              <label for="password">Mot de passe :</label>
-              <input type="password" class="form-control" name="password" >
-            </div>
-            <p>J'ai <a href="#">oublié</a> mon mot de passe.</p>
-            <Button class="btn btn-primary" type="submit">Se Connecter</Button>
-            <!-- <p class="alert alert-info">Entrer "demo" dans le nom d'utilisateur et le mot de passe et cliquer sur login</p> -->
-          </form>
+          <?php include("forms/login.php") ?>
         </div><!-- card body-->
       </div><!-- card -->
     </div><!-- column -->
