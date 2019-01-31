@@ -1,9 +1,10 @@
 echo "Hi, This will install all the required packages";
+
 # Install nodejs, npm
 curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
 sudo apt install nodejs
 
-# Install glopal nodejs packages
+# Install global nodejs packages
 sudo npm i -g http-server grunt-cli
 
 # Install yarn

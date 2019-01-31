@@ -1,0 +1,29 @@
+#navbar-dark{
+  min-height: 2.6rem;
+  padding: 0;
+  .nav-link {
+    display:block;
+    padding:12px;
+    position:relative;
+    white-space:nowrap;
+    &:hover{ background:rgba(255,255,255,.15) }
+    &::after{
+      bottom:0;
+      content:"";
+      display:none;
+      height:4px;
+      left:0;
+      opacity:0;
+      position:absolute;
+      right:0;
+    }
+    &.active{
+      color:#f7f7f7;
+      &::after{
+        background:#56c7ff;
+        display:block;
+        opacity:1
+      }
+    }
+  }
+}

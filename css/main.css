@@ -117,3 +117,29 @@ a:hover {
     color: #414040;
     border-color: #999;
     border-color: #a7a6a6; }
+
+#navbar-dark {
+  min-height: 2.6rem;
+  padding: 0; }
+  #navbar-dark .nav-link {
+    display: block;
+    padding: 12px;
+    position: relative;
+    white-space: nowrap; }
+    #navbar-dark .nav-link:hover {
+      background: rgba(255, 255, 255, 0.15); }
+    #navbar-dark .nav-link::after {
+      bottom: 0;
+      content: "";
+      display: none;
+      height: 4px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0; }
+    #navbar-dark .nav-link.active {
+      color: #f7f7f7; }
+      #navbar-dark .nav-link.active::after {
+        background: #56c7ff;
+        display: block;
+        opacity: 1; }

@@ -22,6 +22,7 @@ $route->add('add-code', function() {
 });
 
 $route->add('run-sql', function() {
+  $view = "double-nav";
   $model = "runsql";
   include "render.php";
 });
