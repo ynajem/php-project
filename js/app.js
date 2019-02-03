@@ -50,4 +50,14 @@ $(function(){
 		mode: "sql",
 	});
 	editor.setSize("100%","150");
+
+});
+
+/* Quill Editor Plugin */
+var quill = new Quill('#editor-container', {
+	modules: {
+		syntax: true,
+		toolbar: '#toolbar-container'
+	},
+	theme: 'snow'
 });

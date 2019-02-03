@@ -32,6 +32,13 @@ module.exports = function(grunt) {
           'bootstrap/dist/css/bootstrap.min.css.map',
         ],
         dest: 'css/'
+      },
+      plugins: {
+        files: [
+          {src:['quill/dist/*'],dest:'plugins/quill', expand: true, cwd: 'node_modules', flatten: true, nonull: true},
+          {src:['codemirror/lib/*'],dest:'plugins/codemirror', expand: true, cwd: 'node_modules', flatten: true, nonull: true},
+          { src: ['bootstrap-tagsinput/dist/*'],dest:'plugins/tagsinput', expand: true, cwd: 'node_modules', flatten: true, nonull: true},
+        ]
       }
     },
 

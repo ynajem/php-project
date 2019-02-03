@@ -27,9 +27,33 @@ $route->add('run-sql', function() {
   include "render.php";
 });
 
+$route->add('contact-us', function() {
+  $view = "double-nav";
+  $model = "contact-us";
+  include "render.php";
+});
+
+$route->add('register', function() {
+  $view = "double-nav";
+  $model = "register";
+  include "render.php";
+});
+
+$route->add('profile', function() {
+  $view = "double-nav";
+  $model = "profile";
+  include "render.php";
+});
+
 $route->add('login', function() {
   $view = "solid";
   $model = "login";
+  include "render.php";
+});
+
+$route->add('dump', function() {
+  $view = "double-nav";
+  $model = "dump";
   include "render.php";
 });
 

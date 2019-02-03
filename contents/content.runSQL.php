@@ -8,4 +8,4 @@
     </div>
   </div>
 </div>
-<?php include "inc.leftbar.php" ?>
+<?php include "inc.rightBar.php" ?>

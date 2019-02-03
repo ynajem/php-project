@@ -24,11 +24,29 @@ switch ($model) {
   case 'runsql':
     $tmpl->model = "runsql";
     $tmpl->query_types = ['craete'=>'Create','read'=>'Read','update'=>'Update','delete'=>'Delete'];
-    $tmpl->content = '<div class="container"><div class="row">'
-                      .content('runSQL',$tmpl)
-                    .'</div></div>';
+    $tmpl->content = '<div class="container"><div class="row">'.content('runSQL',$tmpl).'</div></div>';
+    break;
+
+  case 'contact-us':
+    $tmpl->page_title = "Contact Us";
+    $tmpl->content = '<div class="container"><div class="row">'.content('contact-us',$tmpl).'</div></div>';
+    break;
+
+  case 'register':
+    $tmpl->page_title = "Register New Account";
+    $tmpl->content = '<div class="container"><div class="row">'.content('register',$tmpl).'</div></div>';
+    break;
+
+  case 'profile':
+    $tmpl->page_title = "My Profile";
+    $tmpl->content = '<div class="container"><div class="row">'.content('myevents',$tmpl).'</div></div>';
     break;
     
+  case 'dump':
+    $tmpl->page_title = "Dump Page";
+    $tmpl->content = '<div class="container"><div class="row">'.content('richEditor',$tmpl).'</div></div>';
+    break;
+
   case 'addcode':
     $tmpl->page_title = "Add Code";
     $tmpl->page_description = "Add Code Page Description";
