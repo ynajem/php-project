@@ -1,4 +1,4 @@
-<?php if($tmpl->view=="main") include "inc.sidebar.php" ?>
+<?php if($tmpl->view!="dashboard") include "inc.sidebar.php" ?>
 <div class="body col-md-7">
   <div class="card">
     <div class="card-header">

@@ -21,8 +21,8 @@ switch ($model) {
     $tmpl->content = '<div class="container-fluid"><div class="row">'.content('addcode',$tmpl).'</div></div>';
     break;
 
-  case 'runsql':
-    $tmpl->model = "runsql";
+  case 'run-sql':
+    $tmpl->model = "run-sql";
     $tmpl->query_types = ['craete'=>'Create','read'=>'Read','update'=>'Update','delete'=>'Delete'];
     $tmpl->content = '<div class="container"><div class="row">'.content('runSQL',$tmpl).'</div></div>';
     break;
@@ -39,7 +39,7 @@ switch ($model) {
 
   case 'profile':
     $tmpl->page_title = "My Profile";
-    $tmpl->content = '<div class="container"><div class="row">'.content('myevents',$tmpl).'</div></div>';
+    $tmpl->content = '<div class="container"><div class="row">'.content('profile',$tmpl).'</div></div>';
     break;
     
   case 'dump':
@@ -47,7 +47,7 @@ switch ($model) {
     $tmpl->content = '<div class="container"><div class="row">'.content('richEditor',$tmpl).'</div></div>';
     break;
 
-  case 'addcode':
+  case 'add-code':
     $tmpl->page_title = "Add Code";
     $tmpl->page_description = "Add Code Page Description";
     $tmpl->content = '<div class="container"><div class="row">'.content('addcode',$tmpl).'</div></div>';

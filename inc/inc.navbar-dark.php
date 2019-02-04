@@ -5,7 +5,7 @@
     </button>
     <div class="collapse navbar-collapse" id="menu">
       <?php include("inc.menu.php") ?>
-      <button type="submit" class="btn btn-danger">Post a Project</button>
+      <button type="submit" class="btn btn-danger"><span class="fa fa-plus mr-2"></span> Add New Snippet</button>
     </div><!-- menu -->
   </div><!-- container -->
 </nav>

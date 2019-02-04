@@ -16,7 +16,7 @@
 <?php if($view == 'dashboard'){?>
   <link href="/css/dashboard.css" rel="stylesheet"><!-- DashBoard Spicefic Style -->
 <?php } ?>
-<?php if($model == 'runsql'){?>
+<?php if($model == 'run-sql'){?>
   <link href="/plugins/codemirror/codemirror.css" rel="stylesheet"><!-- CodeMirror Plugin -->
 <?php } ?>
 <link href="http://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"><!-- Quill Plugin -->
