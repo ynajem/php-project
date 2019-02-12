@@ -3,7 +3,7 @@
   <div class="card">
     <div class="card-header">
       <strong>Add New Code</strong>
-      <button class="btn btn-white"><span class="fa fa-plus"></span></button>
+      <img src="/svg/icon-prototype.svg" height="32" alt="">
     </div>
     <div class="card-body">
       <p>Some quick example text to build on the card title.</p>

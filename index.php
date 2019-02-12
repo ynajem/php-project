@@ -4,6 +4,7 @@ require "init.php";
 $route = new Route();
 // login(); /* This Make All Pages Private */
 
+
 $route->add('/', function() {
   /* Model and View have the default values main,main */
   login();
@@ -21,6 +22,15 @@ $route->add('dashboard', function() {
   $model = "dashboard";
   $view = "dashboard";
   include "render.php";
+});
+
+$route->add('render', function() {
+  include "class.render.php";
+  $page = new Render();
+  $tmpl = new template();
+  $page->model = "main";
+  $page->view = "main";
+  $page->template();
 });
 
 $route->add('login', function() {

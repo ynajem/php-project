@@ -43,8 +43,8 @@ switch ($model) {
     break;
     
   case 'dump':
-    $tmpl->page_title = "Dump Page";
-    $tmpl->content = '<div class="container"><div class="row">'.content('richEditor',$tmpl).'</div></div>';
+    $tmpl->page_title = "Page Not Found";
+    $tmpl->content = content('aboutus');
     break;
 
   case 'add-code':

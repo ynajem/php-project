@@ -11,7 +11,7 @@
         <?= $tmpl->content; ?>           
       </div><!-- #main-content -->
     </div><!-- #main -->
-    <?php include("inc.footer.php") ?>
+    <?php include("inc.footer2.php") ?>
     <?php include("inc.scripts.php") ?>
   </body>
 </html>

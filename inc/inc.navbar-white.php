@@ -1,6 +1,6 @@
 <nav id="navbar-white" class="navbar navbar-expand-lg navbar-light bg-white py-2">
   <div class="container">
-      <a class="navbar-brand mr-3" href="/"><img src="/svg/freelancer-logo.svg" height="32" alt=""></a><!-- Brand -->
+      <a class="navbar-brand mr-3" href="/"><img src="/svg/tinysnippets-logo.svg" height="32" alt=""></a><!-- Brand -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
