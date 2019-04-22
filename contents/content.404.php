@@ -1,4 +1,4 @@
-<!-- <div class="col" id="main-contentt"> -->
+<div class="col" id="main-contentt">
   <!-- 404 Content -->
   <div class="text-center">
     <div class="display-2"><i class="fa fa-compass"></i></div>
@@ -11,4 +11,4 @@
     <p>Think this is an error? Please <a href="/contact-us"><u>let us know.</u></a></p>
   </div>
   <!-- /404 Content -->
-<!-- </div> -->
+</div>

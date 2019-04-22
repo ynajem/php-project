@@ -1,22 +1,5 @@
-POST /service/AVTransport_control HTTP/1.1
-Content-Type: text/xml; charset=utf-8
-SOAPAction: "urn:schemas-upnp-org:service:AVTransport:1#GetPositionInfo"
-User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi Note 3 MIUI/V10.1.1.0.MHOCNFI)
-Host: 192.168.1.33:38520
-Connection: Keep-Alive
+GET /hls/m3u8/BeinSport7.m3u8 HTTP/1.1 
+User-Agent: Lavf/56.15.102 
+Host: 95.170.215.120 
+Connection: Keep-Alive 
 Accept-Encoding: gzip
-Content-Length: 310
-
-<?xml version="1.0" encoding="UTF-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetPositionInfo xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID></u:GetPositionInfo></s:Body></s:Envelope>
-
-
-POST /service/AVTransport_control HTTP/1.1
-Content-Type: text/xml; charset=utf-8
-SOAPAction: "urn:schemas-upnp-org:service:AVTransport:1#SetAVTransportURI"
-User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi Note 3 MIUI/V10.1.1.0.MHOCNFI)
-Host: 192.168.1.33:38520
-Connection: Keep-Alive
-Accept-Encoding: gzip
-Content-Length: 1003
-
-<?xml version="1.0" encoding="UTF-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:SetAVTransportURI xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID><CurrentURI>http://s3-us-west-1.amazonaws.com/quickcastapp/image/qc_tvscreen_tip.png</CurrentURI><CurrentURIMetaData>&lt;DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sec="http://www.sec.co.kr/"&gt;&lt;item id="1000" parentID="0" restricted="0"&gt;&lt;dc:title/&gt;&lt;dc:description/&gt;&lt;res protocolInfo="http-get:*:image/png:DLNA.ORG_OP=01"&gt;http://s3-us-west-1.amazonaws.com/quickcastapp/image/qc_tvscreen_tip.png&lt;/res&gt;&lt;upnp:albumArtURI/&gt;&lt;upnp:class&gt;object.item.imageItem&lt;/upnp:class&gt;&lt;/item&gt;&lt;/DIDL-Lite&gt;</CurrentURIMetaData></u:SetAVTransportURI></s:Body></s:Envelope>

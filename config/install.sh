@@ -21,5 +21,8 @@ sudo apt install phpmyadmin php-mbstring php-gettext -y
 sudo phpenmod mbstring
 
 # Enable rewrite module for apache2
-sudo a2enmod rewrite 
+sudo a2enmod rewrite
+
+# Enable cgi module for apache2
+sudo a2enmod cgid 
 

@@ -13,4 +13,5 @@ require "Router.php";
 
 set_include_path(ROOT."/inc");
 include("fun.main.php");
+// include("class.db.php");
 // include("fun.sql.php");

@@ -1,13 +1,13 @@
-<form class="needs-validation" method="post" action="/post" novalidate>
+<form class="needs-validation" method="post" action="/post/add-code" novalidate>
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="topics">Platforms :</label>
-      <select class="custom-select" name="topics" id="topics">
+      <select class="custom-select" name="language" id="language">
         <?= options($tmpl->topics) ?>
       </select>
     </div>
     <div class="form-group col-md-4">
-      <?= bs_select($tmpl->sub_topics,"Topics") ?>
+      <?= bs_select($tmpl->sub_topics,"Topic") ?>
     </div>
     <div class="form-group col-md-12">
       <label for="title">Title :</label>

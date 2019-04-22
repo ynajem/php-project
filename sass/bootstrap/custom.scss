@@ -87,3 +87,11 @@ select:-moz-focusring {
 	transition: border-color .218s;
 	border-radius: 2px;
 }
+
+/* ====== Badges ====== */
+.badge {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    min-width: 19px;
+}

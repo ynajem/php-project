@@ -3,6 +3,8 @@ class DB{
 
   public $sql;
   public $result;
+  public $table;
+  public $columns = array();
 
   public function __construct($hostname,$database,$username,$password){
     $dsn = 'mysql:dbname='.$database.';host='.$hostname.';port=3306';
@@ -58,9 +60,26 @@ class DB{
     header('Content-Type: application/json');
     return $r;
   }
+  
+  public function add(array $values){
+    $this->getColumns();
+    foreach ($values as $key => $val) {
+      if (in_array($key,$this->columns)){
+        $fields[] = "`$key` = '$val'";
+      }
+    }
+    $this->sql = "INSERT into `{$this->table}` SET ".implode(',',$fields);
+    echo ($this->sql);
+    $this->sql();
+  }
+
+  public function getColumns(){
+    $this->sql = "SELECT COLUMN_NAME FROM	INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$this->table}'";
+    $this->columns = $this->list();
+  }
 }
 
-$db = new DB('localhost','bobo','root','arena');
+$db = new DB('localhost','data','root','arena');
 
 
 // $db->sql = "SELECT username FROM users";

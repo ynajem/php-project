@@ -12,7 +12,7 @@ $route->add('/', function() {
   include "render.php";
 });
 
-$route->add('register|run-sql|add-code|profile|contact-us|dump', function() {
+$route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice)', function() {
   $view = "double-nav";
   $model = URI;
   include "render.php";
@@ -47,10 +47,10 @@ $route->add('api', function() {
   include "api.php";
 });
 
-$route->add('post', function() {
+$route->add('post/.+', function($field) {
   include "class.post.php";
   $data = new Post();
-  arr($data->post);
+  include "post.php";
 });
 
 $route->add('run/.+', function($function) {

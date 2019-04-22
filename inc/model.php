@@ -18,39 +18,50 @@ switch ($model) {
   case 'dashboard':
     $tmpl->page_title = "Dashboard";
     $tmpl->description = "Dashboard Description Here";
-    $tmpl->content = '<div class="container-fluid"><div class="row">'.content('addcode',$tmpl).'</div></div>';
+    $tmpl->content = content('addcode',$tmpl);
     break;
 
   case 'run-sql':
     $tmpl->model = "run-sql";
     $tmpl->query_types = ['craete'=>'Create','read'=>'Read','update'=>'Update','delete'=>'Delete'];
-    $tmpl->content = '<div class="container"><div class="row">'.content('runSQL',$tmpl).'</div></div>';
+    $tmpl->content = content('runSQL',$tmpl);
     break;
 
   case 'contact-us':
     $tmpl->page_title = "Contact Us";
-    $tmpl->content = '<div class="container"><div class="row">'.content('contact-us',$tmpl).'</div></div>';
+    $tmpl->content = content('contact-us',$tmpl);
     break;
 
   case 'register':
     $tmpl->page_title = "Register New Account";
-    $tmpl->content = '<div class="container"><div class="row">'.content('register',$tmpl).'</div></div>';
+    $tmpl->content = content('register',$tmpl);
+    break;
+
+  case 'invoice':
+    $tmpl->page_title = "Invoice";
+    $tmpl->content = content('invoice');
     break;
 
   case 'profile':
     $tmpl->page_title = "My Profile";
-    $tmpl->content = '<div class="container"><div class="row">'.content('profile',$tmpl).'</div></div>';
+    $tmpl->content = content('profile');
     break;
     
   case 'dump':
-    $tmpl->page_title = "Page Not Found";
-    $tmpl->content = content('aboutus');
+    $tmpl->page_title = "Dump Page";
+    $tmpl->content = content('list2');
+    // $tmpl->content = content('list');
+    // $tmpl->content = content('blog-list');
+    // $tmpl->content = content('404');
+    // $tmpl->content = content('aboutus');
+    // $tmpl->content = content('buttons');
+    // $tmpl->content = content('richEditor');
     break;
 
   case 'add-code':
     $tmpl->page_title = "Add Code";
     $tmpl->page_description = "Add Code Page Description";
-    $tmpl->content = '<div class="container"><div class="row">'.content('addcode',$tmpl).'</div></div>';
+    $tmpl->content = content('addcode',$tmpl);
     break;
 
   case 'login':

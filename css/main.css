@@ -152,3 +152,38 @@ a:hover {
 /* Quill Editor Plugin */
 #editor-container {
   height: 200px; }
+
+.widget-content {
+  padding: 1rem;
+  flex-direction: row;
+  align-items: center; }
+  .widget-content .widget-content-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center; }
+  .widget-content .widget-content-right {
+    margin-left: auto; }
+    .widget-content .widget-content-right.widget-content-actions {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .2s; }
+  .widget-content:hover .widget-content-right.widget-content-actions {
+    visibility: visible;
+    opacity: 1; }
+  .widget-content .widget-content-left .widget-heading {
+    opacity: .8;
+    font-weight: bold; }
+
+.todo-list-wrapper .todo-indicator {
+  position: absolute;
+  width: 4px;
+  height: 60%;
+  border-radius: .3rem;
+  left: .625rem;
+  top: 20%;
+  opacity: .6;
+  transition: opacity .2s; }
+
+.flex2 {
+  flex: 2; }

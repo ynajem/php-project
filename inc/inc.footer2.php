@@ -1,21 +1,14 @@
 <div class="container">
   <div class="navbar navbar-expand navbar-light navbar-footer">
-    <a class="navbar-brand" href="index.html">tinyCode</a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
+    <a class="navbar-brand" href="index.html">tinySnippets</a>
+    <div class="navbar-nav">
         <a class="nav-link" href="about.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Dashboard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+        <a class="nav-link" href="/contact-us">Contact Us</a>
+        <a class="nav-link" href="/invoice">Invoice</a>
+    </div>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
         <a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a>
-      </li>
     </ul>
   </div>
 </div>
