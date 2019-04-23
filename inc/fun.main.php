@@ -19,12 +19,6 @@ function options(Array $array){
   return join($r,'');
 }
 
-function bs_select(Array $array,$name)
-{
-  $lname = strtolower($name);
-  return '<label for="'.$lname.'">'.$name.' :</label><select name="'.$lname.'" id="'.$lname.'" class="custom-select">'.options($array).'</select>';
-}
-
 function redirect($url){
   header("Location: ".$url);
   die();

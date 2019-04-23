@@ -1,5 +1,0 @@
-GET /hls/m3u8/BeinSport7.m3u8 HTTP/1.1 
-User-Agent: Lavf/56.15.102 
-Host: 95.170.215.120 
-Connection: Keep-Alive 
-Accept-Encoding: gzip

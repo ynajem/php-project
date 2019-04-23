@@ -8,20 +8,16 @@ class DB{
 
   public function __construct($hostname,$database,$username,$password){
     $dsn = 'mysql:dbname='.$database.';host='.$hostname.';port=3306';
-
     try {
       $this->db = new PDO($dsn, $username, $password);
     } catch(PDOException $e) {
-      // echo $e;
       die('Could not connect to the database');
     }
     # To display sql statment errors
     # Make active only during Production phase
     $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     # Set the default fetch mode to associative arrays
     $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
     // For SQL injection
     $this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
   }
@@ -73,23 +69,11 @@ class DB{
     $this->sql();
   }
 
+  // Return all columns of a database table
   public function getColumns(){
-    $this->sql = "SELECT COLUMN_NAME FROM	INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$this->table}'";
+    $this->sql = "SELECT COLUMN_NAME FROM	INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$this->table}' ";
     $this->columns = $this->list();
   }
 }
 
 $db = new DB('localhost','data','root','arena');
-
-
-// $db->sql = "SELECT username FROM users";
-// $users = $db->list();
-// foreach ($users as $user) {
-//   # code...
-//   $db->sql = "SELECT * FROM users WHERE username = '{$user}'";
-//   $maleUsers = $db->row();
-//   print_r($maleUsers);
-// }
-
-// print_r($users);
-// echo $db->count();

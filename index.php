@@ -12,7 +12,7 @@ $route->add('/', function() {
   include "render.php";
 });
 
-$route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice)', function() {
+$route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice|rich-editor)', function() {
   $view = "double-nav";
   $model = URI;
   include "render.php";

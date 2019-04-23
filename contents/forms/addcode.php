@@ -1,17 +1,23 @@
 <form class="needs-validation" method="post" action="/post/add-code" novalidate>
   <div class="form-row">
     <div class="form-group col-md-4">
-      <label for="topics">Platforms :</label>
+      <label for="language">Platforms :</label>
       <select class="custom-select" name="language" id="language">
         <?= options($tmpl->topics) ?>
       </select>
     </div>
     <div class="form-group col-md-4">
-      <?= bs_select($tmpl->sub_topics,"Topic") ?>
+      <label for="topic">Topic :</label>
+      <select class="custom-select" name="topic" id="topic">
+        <?= options($tmpl->sub_topics) ?>
+      </select>
     </div>
     <div class="form-group col-md-12">
       <label for="title">Title :</label>
-      <input type="text" class="form-control" name="title" placeholder="Title of the code">
+      <input type="text" class="form-control :invalid" name="title" placeholder="Title of the code" required>
+      <div class="invalid-feedback">
+        Please enter a title.
+      </div>
     </div>
     </div>
   <hr class="hr-fancy">

@@ -1,5 +1,8 @@
 <?php
-require_once 'connection.php';
+
+/* This is just and old file for sql function once you 
+transfer all sql functions to the new one class.sql.php 
+delete it */
 
 function runsql($sql){
 	global $db;
@@ -19,7 +22,7 @@ function sql($sql,$field=false){
 	return $r;
 }
 
-// return the number of rows for an sql request
+// Return the number of rows for an sql request
 function rowCount($sql){
   return runsql($sql)->rowCount();
 }
@@ -28,16 +31,6 @@ function rowCount($sql){
 function sqlMax($field){
 	list($table,$field) = explode('.',$field);
 	return sql("SELECT $field as max FROM $table ORDER BY $field DESC LIMIT 1",'max')[0];
-}
-
-// Return all the fields of a database table : sqlField('imdb')
-function sqlFields($table){
-  global $database;
-  $sql = "SELECT column_name
-          FROM information_schema.columns
-          WHERE table_schema = '$database' and table_name = '$table'
-        ";
-  return sql($sql,'column_name');
 }
 
 // ex: sqlDelete('hdmp.imdb',$imdb)

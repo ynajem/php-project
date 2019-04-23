@@ -31,6 +31,11 @@ switch ($model) {
     $tmpl->page_title = "Contact Us";
     $tmpl->content = content('contact-us',$tmpl);
     break;
+  
+  case 'rich-editor':
+    $tmpl->page_title = "Contact Us";
+    $tmpl->content = content('rich-editor',$tmpl);
+    break;
 
   case 'register':
     $tmpl->page_title = "Register New Account";
@@ -55,7 +60,7 @@ switch ($model) {
     // $tmpl->content = content('404');
     // $tmpl->content = content('aboutus');
     // $tmpl->content = content('buttons');
-    // $tmpl->content = content('richEditor');
+    // $tmpl->content = content('rich-editor');
     break;
 
   case 'add-code':
