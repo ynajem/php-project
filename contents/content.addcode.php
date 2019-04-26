@@ -5,7 +5,6 @@
       <img src="/svg/icon-prototype.svg" height="32" alt="">
     </div>
     <div class="card-body">
-      <p>Some quick example text to build on the card title.</p>
       <?php include "forms/addcode.php" ?>
     </div>
   </div>

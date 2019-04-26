@@ -64,8 +64,8 @@ switch ($model) {
     break;
 
   case 'add-code':
-    $tmpl->page_title = "Add Code";
-    $tmpl->page_description = "Add Code Page Description";
+    $tmpl->page_title = "Add New Snippet";
+    $tmpl->page_description = "Add New Tiny Snippet";
     $tmpl->content = content('addcode',$tmpl);
     break;
 
