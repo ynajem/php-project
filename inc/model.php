@@ -55,13 +55,37 @@ switch ($model) {
   case 'dump':
     $tmpl->page_title = "Dump Page";
     $tmpl->content = content('list2');
-    // $tmpl->content = content('list');
     // $tmpl->content = content('blog-list');
     // $tmpl->content = content('404');
     // $tmpl->content = content('aboutus');
     // $tmpl->content = content('buttons');
-    // $tmpl->content = content('rich-editor');
     break;
+
+  case 'list1':
+    $tmpl->content = content('list1');
+    break;
+
+  case 'list2':
+    $tmpl->content = content('list2');
+    break;
+
+  case 'blog-list':
+    $tmpl->content = content('blog-list');
+    break;
+
+  case '404':
+    $tmpl->content = content('404');
+    break;
+
+  case 'about-us':
+    $tmpl->content = content('aboutus');
+    break;
+
+  case 'buttons':
+    $tmpl->content = content('buttons');
+    break;
+
+  
 
   case 'add-code':
     $tmpl->page_title = "Add New Snippet";

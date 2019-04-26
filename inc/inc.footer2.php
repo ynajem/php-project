@@ -5,10 +5,9 @@
         <a class="nav-link" href="about.html">Home</a>
         <a class="nav-link" href="/dashboard">Dashboard</a>
         <a class="nav-link" href="/contact-us">Contact Us</a>
-        <a class="nav-link" href="/invoice">Invoice</a>
     </div>
     <ul class="navbar-nav ml-auto">
-        <a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a>
+        <a class="nav-link" href="/about-us"><i class="fa fa-question-circle"></i> Help</a>
     </ul>
   </div>
 </div>

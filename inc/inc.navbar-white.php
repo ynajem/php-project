@@ -10,15 +10,30 @@
             <a class="nav-link" href="/dashboard">Dashboard</a>
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="members" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Members
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="members">
               <a class="dropdown-item" href="/login">Login</a>
               <a class="dropdown-item" href="/logout">Logout</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/register">Register New Account</a>
             </div>
+          </li>          
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="morepages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="morepages">
+              <a class="dropdown-item" href="/list1">List 1</a>
+              <a class="dropdown-item" href="/list2">List 2</a>
+              <a class="dropdown-item" href="/invoice">Invoice</a>
+              <a class="dropdown-item" href="/blog-list">Blog List</a>
+              <a class="dropdown-item" href="/about-us">About Us</a>
+              <a class="dropdown-item" href="/buttons">Buttons</a>
+              <a class="dropdown-item" href="/404">404 Page</a>
+            </div>
+          </li>
         </ul>
         <form method="get" action="/api">
           <input name="record" class="form-control form-control-sm" type="text" placeholder="Search">

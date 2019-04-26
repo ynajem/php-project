@@ -12,7 +12,7 @@ $route->add('/', function() {
   include "render.php";
 });
 
-$route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice|rich-editor)', function() {
+$route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice|rich-editor|list1|list2|blog-list|404|about-us|buttons)', function() {
   $view = "double-nav";
   $model = URI;
   include "render.php";
@@ -59,6 +59,12 @@ $route->add('run/.+', function($function) {
 
 $route->add('test/.+', function($name) {
   echo "My Name is $name\n";
+});
+
+$route->add('/.+', function($url) {
+  $view = "double-nav";
+  $model = "404";
+  include "render.php";
 });
 
 $route->listen();
