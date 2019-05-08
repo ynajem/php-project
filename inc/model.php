@@ -52,14 +52,20 @@ switch ($model) {
     $tmpl->content = content('profile');
     break;
     
+  case 'show-code':
+    include "class.db.php";
+    $db->table = "snippets";
+    $data = $db->rowById($id);
+    $tmpl->page_title = $data['title'];
+    $tmpl->data = $data;
+    $tmpl->content = content('show-code',$tmpl);
+    break;
+
   case 'dump':
     $tmpl->page_title = "Dump Page";
-    $tmpl->content = content('list2');
-    // $tmpl->content = content('blog-list');
-    // $tmpl->content = content('404');
-    // $tmpl->content = content('aboutus');
-    // $tmpl->content = content('buttons');
+    $tmpl->content = content('dump');
     break;
+    
 
   case 'list1':
     $tmpl->content = content('list1');

@@ -17,4 +17,5 @@
   <link href="/css/dashboard.css" rel="stylesheet"><!-- DashBoard Spicefic Style -->
 <?php } ?>
 <link href="/plugins/codemirror/codemirror.css" rel="stylesheet"><!-- CodeMirror Plugin -->
+<link href="/plugins/highlight/default.css" rel="stylesheet"><!-- Highlight JS Plugin -->
 <link href="http://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"><!-- Quill Plugin -->

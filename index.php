@@ -53,6 +53,12 @@ $route->add('post/.+', function($field) {
   include "post.php";
 });
 
+$route->add('code/.+', function($id) {
+  $model = "show-code";
+  $view = "double-nav";
+  include "render.php";
+});
+
 $route->add('run/.+', function($function) {
   include "runner.php";
 });

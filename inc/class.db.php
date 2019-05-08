@@ -4,6 +4,7 @@ class DB{
   public $sql;
   public $result;
   public $table;
+  public $id;
   public $columns = array();
 
   public function __construct($hostname,$database,$username,$password){
@@ -40,6 +41,11 @@ class DB{
       $r[] = $d[0];
     }
     return $r;
+  }
+
+  public function rowById($id){
+    $this->sql = "SELECT * FROM `{$this->table}` WHERE `id`={$id} LIMIT 1";
+    return $this->row();
   }
 
   // return the number of rows for an sql request
