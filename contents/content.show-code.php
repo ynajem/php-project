@@ -1,7 +1,7 @@
 <div class="body col-md-9">
   <div class="card">
     <div class="card-header">
-      <strong><?php echo $tmpl->data['title'] ?></strong>
+      <strong><?php echo $data['title'] ?></strong>
       <div>
         <button type="submit" class="btn btn-success">Python</button>
         <button type="submit" class="btn btn-dark">Network</button>
@@ -14,7 +14,7 @@
       </div>
       <div class="code-container">
         <pre class="mb-0">
-          <code class="mb-0"><?= stripslashes($tmpl->data['code']) ?></code>
+          <code class="mb-0"><?= stripslashes($data['code']) ?></code>
         </pre>
       </div>
       <div class="tags mb-3">
@@ -45,7 +45,7 @@
         <a href="tag/web">Web</a>
         <a href="tag/web-development">Web Development</a>
 			</div>
-      <p class="description"><?= $tmpl->data['description'] ?></p>
+      <p class="description"><?= $data['description'] ?></p>
     <p><a href="bobo" class="tag">Tag Class</a></p>
     </div>
     <div class="card-footer">

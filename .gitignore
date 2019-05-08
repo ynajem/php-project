@@ -2,3 +2,4 @@ node_modules
 tempo
 test.php
 yarn-error.log
+.vscode

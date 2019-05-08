@@ -24,16 +24,18 @@ function redirect($url){
   die();
 }
 
-class template {
-  public $content;
-  public $view;
-  public $model;
-}
+// class template {
+//   public $content;
+//   public $view;
+//   public $model;
+// }
 
-function content($file,$tmpl="raw") {
+function content($file) {
+  global $tmpl;
+  extract(get_object_vars($tmpl));
   ob_start();
   require('contents/content.'.$file.'.php');
-  return ob_get_clean();
+  $tmpl->content = ob_get_clean();
 }
 
 function login(){
