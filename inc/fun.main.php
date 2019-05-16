@@ -30,12 +30,12 @@ function redirect($url){
 //   public $model;
 // }
 
-function content($file) {
-  global $tmpl;
+function content($file,$tmpl='raw') {
+  // global $tmpl;
   extract(get_object_vars($tmpl));
   ob_start();
   require('contents/content.'.$file.'.php');
-  $tmpl->content = ob_get_clean();
+  return ob_get_clean();
 }
 
 function login(){

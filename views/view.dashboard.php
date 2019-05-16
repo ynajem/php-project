@@ -8,7 +8,7 @@
   <div id="main-content">
     <?php include "inc.dash.sidebar.php" ?>
     <main id="content" class="py-2"> 
-        <?= $tmpl->content ?>
+        <?= $content ?>
     </main>
   </div><!-- main-content -->
   <?php include "inc.scripts.php" ?>

@@ -7,7 +7,7 @@
     <div id="main">
       <?php include("inc.navbar.php") ?>
       <div id="main-content">
-        <?= $tmpl->content; ?>           
+        <?= $content; ?>           
       </div><!-- #main-content -->
     </div><!-- #main -->
     <?php include("inc.footer.php") ?>

@@ -11,6 +11,44 @@
   line-height: 22px;
   cursor: text;
 }
+.bootstrap-tagsinput {
+  display: block;
+  max-width: 100%;
+  /* vertical-align: middle; */
+  cursor: text;
+  -webkit-transition: border-color .15s;
+  transition: border-color .15s
+}
+
+.bootstrap-tagsinput:before, .bootstrap-tagsinput:after {
+  content: " ";
+  display: table
+}
+
+.bootstrap-tagsinput:after {
+  clear: both
+}
+
+.bootstrap-tagsinput input, .bootstrap-tagsinput-input {
+  display: block;
+  float: left;
+  padding: 0 .375rem !important;
+  max-width: 100% !important;
+  width: auto;
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  line-height: 1.5rem
+}
+/* .bootstrap-tagsinput {
+  display: block;
+  max-width: 100%;
+  cursor: text;
+  -webkit-transition: border-color .15s;
+  transition: border-color .15s
+} */
 .bootstrap-tagsinput input {
   border: none;
   box-shadow: none;

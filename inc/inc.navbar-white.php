@@ -32,6 +32,7 @@
               <a class="dropdown-item" href="/about-us">About Us</a>
               <a class="dropdown-item" href="/buttons">Buttons</a>
               <a class="dropdown-item" href="/404">404 Page</a>
+              <a class="dropdown-item" href="/rich-editor">Rich Editor</a>
             </div>
           </li>
         </ul>

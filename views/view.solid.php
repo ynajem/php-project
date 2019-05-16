@@ -13,7 +13,7 @@
         <a href="#"><img src="img/logo.jpg" alt="blue" title="blue"></a>
       </div>
     </div> <!-- header -->
-    <?= $tmpl->content ?>
+    <?= $content ?>
     <?php include("inc.footer.php") ?>
     <?php include("inc.scripts.php") ?>
   </body>

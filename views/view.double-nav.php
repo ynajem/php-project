@@ -10,7 +10,7 @@
       <div id="main-content">
         <div class="container">
           <div class="row">
-            <?= $tmpl->content; ?>           
+            <?= $content; ?>           
           </div><!-- .row -->
         </div><!-- .container -->
       </div><!-- #main-content -->

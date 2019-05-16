@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label class="form-conntrol-label">Type your SQL and click on RUN to excute your query :</label>
+    <label class="form-conntrol-label">Type your SQL query and click on RUN to excute it :</label>
     <textarea id="codemirror" class="form-control" name="code" rows="10">
 SELECT name,email
 FROM users</textarea>
