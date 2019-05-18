@@ -4,7 +4,11 @@
   border:1px solid #d6d6d6;
 }
 
-/* Quill Editor Plugin */
-#editor-container {
-  height: 200px;
+/* Tagsinput Plugin */
+.bootstrap-tagsinput{
+  border: 1px solid rgba(24, 28, 33, 0.1);
+  box-shadow: none;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

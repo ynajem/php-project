@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="/css/bootstrap.css"><!-- Bootstrap CSS -->
 
 <!-- Plugins -->
-<link rel="stylesheet" href="/plugins/tagsinput/tagsinput.css"><!-- Bootstrap Tagsinput -->
+<link rel="stylesheet" href="/plugins/tagsinput/bootstrap-tagsinput.css"><!-- Bootstrap Tagsinput -->
 <link rel="stylesheet" href="/plugins/codemirror/codemirror.css"><!-- CodeMirror Plugin -->
 <link rel="stylesheet" href="/plugins/highlight/default.css"><!-- Highlight JS Plugin -->
 

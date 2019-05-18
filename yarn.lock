@@ -646,7 +646,7 @@ grunt-sass@^3.0.2:
   resolved "https://registry.yarnpkg.com/grunt-sass/-/grunt-sass-3.0.2.tgz#b4f01567ce3df4460fcc788e9e5e4c65263425ed"
   integrity sha512-Ogq4cWqBre71gZIkgxIxevgzZHSIIsrKu/5yvPDl4Mvib0A4TRTJEQUdpQ0YV1iai0DPjayz02vDJE6KUVHQ2w==
 
-grunt@^1.0.3:
+grunt@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grunt/-/grunt-1.0.4.tgz#c799883945a53a3d07622e0737c8f70bfe19eb38"
   integrity sha512-PYsMOrOC+MsdGEkFVwMaMyc6Ob7pKmq+deg1Sjr+vvMWp35sztfwKE7qoN51V+UEtHsyNuMcGdgMLFkBHvMxHQ==
