@@ -5,7 +5,7 @@ curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
 sudo apt install nodejs
 
 # Install global nodejs packages
-sudo npm i -g http-server grunt-cli
+sudo npm i -g http-server grunt-cli live-server
 
 # Install yarn
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -

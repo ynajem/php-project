@@ -1,5 +1,5 @@
 <form class="form-signin text-center" method="post" action="login.php">
-  <img class="mb-4" src="/svg/radar.svg" alt="" height="46">
+  <img class="mb-4" src="/svg/user.svg" alt="" height="46">
   <div class="form-group">
     <label for="username" class="sr-only">Username :</label>
     <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>

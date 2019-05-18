@@ -26,17 +26,6 @@ $route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice|rich-ed
   include "render.php";
 });
 
-$route->add('dashboard', function() {
-  // $model = "dashboard";
-  $view = "dashboard";
-  global $tmpl;
-  $tmpl->page_title = "Dashboard";
-  $tmpl->sub_topics = ['network'=>'Network','os'=>'Operating Systems','scripts'=>'Scripts','tweaks'=>'Tweaks'];
-  $tmpl->topics = ['linux'=>'Linux','python'=>'Python','php'=>'PHP'];
-  $content = content('add-code',$tmpl);
-  include "render.php";
-});
-
 $route->add('login', function() {
   $view = "solid";
   $content = content("login");

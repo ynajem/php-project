@@ -1,9 +1,7 @@
 module.exports = function(grunt) {
-  // pkg: grunt.file.readJSON('package.json'),
   const sassImp = require('node-sass');
   // Project configuration.
   grunt.initConfig({
-
     // Copy files to their proper destinations.
     copy: {
       js: {
@@ -35,7 +33,6 @@ module.exports = function(grunt) {
       },
       plugins: {
         files: [
-          {src:['quill/dist/*'],dest:'plugins/quill', expand: true, cwd: 'node_modules', flatten: true, nonull: true},
           {src:['codemirror/lib/*'],dest:'plugins/codemirror', expand: true, cwd: 'node_modules', flatten: true, nonull: true},
           {src: ['bootstrap-tagsinput/dist/*'],dest:'plugins/tagsinput', expand: true, cwd: 'node_modules', flatten: true, nonull: true},
         ]
@@ -58,28 +55,17 @@ module.exports = function(grunt) {
         implementation: sassImp,
       },
       main: {
-        files: {
-          'css/layout.css':'sass/layout.scss',
-          'css/main.css':'sass/main/main.scss'
-        }
-      },
-      dashboard: {
-        files: {
-          'css/dashboard.css':'sass/dashboard/main.scss'
-        }
+        files: {'css/main.css':'sass/main/main.scss'}
       },
       bootstrap : {
         files: {'css/bootstrap.css':'sass/bootstrap/main.scss'}
       }
     },
+
     watch: {
       main: {
         files: ['sass/main/*.scss','sass/main/*/*.scss'],
         tasks: ['sass:main'],
-      },
-      dashboard: {
-        files: ['sass/dashboard/*.scss','sass/dashboard/*/*.scss'],
-        tasks: ['sass:dashboard'],
       },
       bootstrap: {
         files: ['node_modules/bootstrap/scss/*.scss','sass/bootstrap/*.scss'],
@@ -97,8 +83,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+
   // Default task(s).
-  grunt.registerTask('default', ['copy']);
+  grunt.registerTask('default', ['copy']);  
+  // Update resources
+  grunt.registerTask('update', ['copy','sass']);
 
   // Tasks
   grunt.registerTask('init', ['copy']);

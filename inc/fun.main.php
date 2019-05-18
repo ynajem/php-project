@@ -31,7 +31,7 @@ function redirect($url){
 // }
 
 function content($file,$tmpl='raw') {
-  // global $tmpl;
+  global $tmpl;
   extract(get_object_vars($tmpl));
   ob_start();
   require('contents/content.'.$file.'.php');

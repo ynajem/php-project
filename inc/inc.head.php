@@ -10,12 +10,11 @@
 <script src="/js/pace.min.js"></script><!-- Pace Script -->
 <link rel="stylesheet" href="/css/font-awesome.min.css"><!-- Fontawesome CSS -->
 <link rel="stylesheet" href="/css/bootstrap.css"><!-- Bootstrap CSS -->
-<link rel="stylesheet" href="/css/plugins/tagsinput.css"><!-- Bootstrap Tagsinput -->
-<!-- Page styles -->
+
+<!-- Plugins -->
+<link rel="stylesheet" href="/plugins/tagsinput/tagsinput.css"><!-- Bootstrap Tagsinput -->
+<link rel="stylesheet" href="/plugins/codemirror/codemirror.css"><!-- CodeMirror Plugin -->
+<link rel="stylesheet" href="/plugins/highlight/default.css"><!-- Highlight JS Plugin -->
+
+<!-- Main Stylesheet -->
 <link href="/css/main.css" rel="stylesheet">
-<?php if($view == 'dashboard'){?>
-  <link href="/css/dashboard.css" rel="stylesheet"><!-- DashBoard Spicefic Style -->
-<?php } ?>
-<link href="/plugins/codemirror/codemirror.css" rel="stylesheet"><!-- CodeMirror Plugin -->
-<link href="/plugins/highlight/default.css" rel="stylesheet"><!-- Highlight JS Plugin -->
-<link href="http://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"><!-- Quill Plugin -->

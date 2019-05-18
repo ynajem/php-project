@@ -7,7 +7,6 @@
         <a class="nav-link active" href="/">Home</a>
         <a class="nav-link" href="/login">Login</a>
         <a class="nav-link" href="/logout">Logout</a>
-        <a class="nav-link" href="/dash">Dashboard</a>
       </div><!-- nav -->
 
       <div class="d-flex align-items-center justify-content-md-between justify-content-center my-2">
