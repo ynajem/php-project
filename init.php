@@ -4,6 +4,9 @@ ini_set('display_errors', '1');
 
 define('ROOT', __DIR__);
 
+//Start session
+session_start();
+
 if(isset($_REQUEST['uri'])) define('URI',$_REQUEST['uri']);
 else define('URI','main');
 require "Router.php";

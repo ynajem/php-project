@@ -2,22 +2,18 @@
 include ("class.db.php");
 switch ($field) {
   case 'add-code':
-    echo "<h1>This is the Add Code Post Page</h1>";
-    echo URI;
+    $url = "/add-code";
     $data->required = ['title','language','topic','description'];
     if($data->is_valid()){
       $data->post['user_id'] = 113;
-      arr($data->post);
+      // arr($data->post);
       $db->table = 'snippets';
-      $db->add($data->post);
+      $last_id = $db->add($data->post);
+      redirect("/code/{$last_id}");
     }
     else{
-      $db->table = 'snippets';
-      $db->getColumns();
-      arr($db->columns);
-      arr($data->post);
-      echo "Please, fill out all the required fields: ";
-      echo implode(", ",$data->required);
+      $msg = "Please fill out all the required fields.";
+      send_alert($msg,$url);
     }
     break;
   

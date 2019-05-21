@@ -1,6 +1,7 @@
 <?php
 class DB{
 
+  public $db;
   public $sql;
   public $result;
   public $table;
@@ -71,8 +72,13 @@ class DB{
       }
     }
     $this->sql = "INSERT into `{$this->table}` SET ".implode(',',$fields);
+    // $this->sql .= ";" . "SELECT LAST_INSERT_ID();";
     echo ($this->sql);
     $this->sql();
+    return  $this->db->lastInsertId();
+    // $res = $this->sql();
+    
+
   }
 
   // Return all columns of a database table

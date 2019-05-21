@@ -7,7 +7,7 @@
     </div>
     <div class="form-group col-md-4">
       <label for="language">Topic :</label>
-      <select class="custom-select" name="language" id="language"><?= options($tmpl->topics) ?></select>
+      <select class="custom-select" name="language" id="language"><?= options($topics) ?></select>
     </div>
   </div>
   <div class="form-group">
@@ -28,7 +28,7 @@
     </div>
     <div class="form-group col-md-4">
       <label for="topic">Field of use (Optional) :</label>
-      <select class="custom-select" name="topic" id="topic"><?= options($tmpl->sub_topics) ?></select>
+      <select class="custom-select" name="topic" id="topic"><?= options($sub_topics) ?></select>
     </div>
   </div>
   <button type="submit" class="btn btn-primary"><span class="fa fa-plus mr-2"></span>Add Snippet</button>

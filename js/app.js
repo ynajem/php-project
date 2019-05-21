@@ -1,6 +1,5 @@
+"use strict";
 $(function(){
-	"use strict";
-	
 	// Enable bootstrip tooltips
 	$("[data-toggle='tooltip']").tooltip();
 
@@ -8,7 +7,7 @@ $(function(){
 	$("#tagsinput1").tagsinput({ tagClass: "badge badge-primary" });
 
 	/* Form validation */
-	var forms = document.getElementsByClassName('needs-validation');
+	var forms = document.querySelectorAll('.needs-validation');
 	var validation = Array.prototype.filter.call(forms, function (form) {
 		form.addEventListener('submit', function (event) {
 			if (form.checkValidity() === false) {
@@ -20,7 +19,8 @@ $(function(){
 	});
 
 	/* Enable CodeMirror Plugin */
-	var editor = CodeMirror.fromTextArea(document.getElementById('codemirror'), {
+	var code = document.querySelector('#codemirror');
+	var editor = CodeMirror.fromTextArea(code, {
 		lineNumbers: true,
 		matchBrackets: true,
 		autocapitalize: true,

@@ -1,9 +1,9 @@
 <?php
 include "init.php";
 
-ob_start();
-session_start();
+// session_start();
 
+ob_start();
 if (!empty($_POST['username']) && !empty($_POST['password'])) {
   if ($_POST['username'] == 'najem' && $_POST['password'] == 'demo') {
     $_SESSION['valid'] = TRUE;

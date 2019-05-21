@@ -7,7 +7,7 @@
     <div class="form-group col-md-4">
       <label for="query-type">Query Type :</label>
       <select name="query-type" id="query-type" class="custom-select">
-        <?= options($tmpl->query_types) ?>
+        <?= options($query_types) ?>
       </select>
     </div>
   </div>

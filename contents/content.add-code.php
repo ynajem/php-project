@@ -5,6 +5,7 @@
       <img src="/svg/icon-prototype.svg" height="32" alt="">
     </div>
     <div class="card-body">
+      <?= read_alert() ?>
       <?php include "forms/addcode.php" ?>
     </div>
   </div>

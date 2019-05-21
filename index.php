@@ -1,28 +1,28 @@
 <?php
 require "init.php";
+require "config.php";
 
 $route = new Route();
-// global $tmpl;
-$tmpl = new stdClass();
-// login(); /* This Make All Pages Private */
-
 
 $route->add('/', function() {
-  /* Model and View have the default values main,main */
   login();
-  $view = "double-nav";
+
+  $view = "main";
   $content = content("blank");
+  $page_title = title('home');
+  $page_description ="Home Page Desciption";
   include "render.php";
+ 
 });
 
+$view = "double-nav";
 $route->add('/(register|run-sql|add-code|profile|contact-us|dump|invoice|rich-editor|list1|list2|blog-list|404|about-us|buttons)', function() {
-  $view = "double-nav";
-  global $tmpl;
-  $tmpl->query_types = ['craete'=>'Create','read'=>'Read','update'=>'Update','delete'=>'Delete'];
-  $tmpl->page_title = "PHP Project";
-  $tmpl->topics = ['linux'=>'Linux','python'=>'Python','php'=>'PHP'];
-  $tmpl->sub_topics = ['network'=>'Network','os'=>'Operating Systems','scripts'=>'Scripts','tweaks'=>'Tweaks'];
-  $content = content(URI,$tmpl);
+  $page_title = title(URI);
+  $page_description = "PHP Project Description";
+  $query_types = ['craete'=>'Create','read'=>'Read','update'=>'Update','delete'=>'Delete'];
+  $topics = ['linux'=>'Linux','python'=>'Python','php'=>'PHP'];
+  $sub_topics = ['network'=>'Network','os'=>'Operating Systems','scripts'=>'Scripts','tweaks'=>'Tweaks'];
+  $content = content(URI,get_defined_vars());
   include "render.php";
 });
 
@@ -54,7 +54,6 @@ $route->add('code/.+', function($id) {
   $tmpl->data = $data;
   $tmpl->page_title = $data['title'];
   $content = content("show-code",$tmpl);
-  $view = "double-nav";
   include "render.php";
 });
 
@@ -67,7 +66,6 @@ $route->add('test/.+', function($name) {
 });
 
 $route->add('/.+', function($url) {
-  $view = "double-nav";
   $content = content("404");
   include "render.php";
 });
